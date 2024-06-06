@@ -15,7 +15,7 @@ public class CheckGuest {
 		int i=0;
 		while (i < invitati.length) {
 			System.out.println("l'indice numero: "+ i + " nome: "+nome + " confronto: "+invitati[i]);
-			if (invitati[i] != nome) {
+			if (invitati[i] == nome) {
 				System.out.println("puoi entrare");
 			} else {
 				System.out.println("non puoi entrare");
