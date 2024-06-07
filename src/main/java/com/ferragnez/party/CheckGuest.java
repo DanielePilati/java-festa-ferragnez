@@ -13,8 +13,8 @@ public class CheckGuest {
 		String nome = scanner.nextLine() ;
 		scanner.close();
 		int i=0;
-		while (i < invitati.length) {
-			System.out.println("l'indice numero: "+ i + " nome: "+nome + " confronto: "+invitati[i]);
+		while (i < invitati.length && invitati[i] == nome) {
+			System.out.println("|l'indice numero: "+ i + "| nome: "+nome + "| confronto: "+invitati[i]);
 			if (invitati[i] == nome) {
 				System.out.println("puoi entrare");
 			} else {
