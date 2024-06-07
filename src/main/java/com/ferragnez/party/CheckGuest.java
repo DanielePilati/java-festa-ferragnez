@@ -14,8 +14,10 @@ public class CheckGuest {
 		scanner.close();
 		int i=0;
 		while (i < invitati.length) {
+			
 			System.out.println("|l'indice numero: "+ i + "| nome: "+nome + "| confronto: "+invitati[i]);
-			if (invitati[i] == nome) {
+			
+			if (invitati[i].equals(nome) ) {
 				System.out.println("puoi entrare");
 			} else {
 				System.out.println("non puoi entrare");
