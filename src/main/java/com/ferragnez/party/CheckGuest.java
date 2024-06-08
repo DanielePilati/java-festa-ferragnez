@@ -12,21 +12,37 @@ public class CheckGuest {
 		System.out.println("inserisci il tuo nome");
 		nome = scanner.nextLine() ;
 		scanner.close();
-		int i=0;
 		boolean isOk = false;
+		
+//con ciclo while
+/*		
+        int i=0;
 		while (i < invitati.length && isOk == false) {			
 			if (invitati[i].equals(nome) ) {
 				System.out.println("Puoi entrare");
 				isOk = true;
-			} else {
-				
 			}
 			i++;
 		}
+*/
+		
+// con ciclo for
+		
+		for (int i = 0; i < invitati.length && isOk == false; i++) {
+			if (invitati[i].equals(nome) ) {
+				System.out.println("Puoi entrare");
+				isOk = true;
+			} 
+		}
+		
+		
+		
 		if (isOk == false) {
 			System.out.println("Torna cortesemente da dove sei venuto");
 		}
-
+		
+		
+		
 	}
 
 }
