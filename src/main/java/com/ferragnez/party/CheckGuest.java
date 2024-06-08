@@ -27,20 +27,28 @@ public class CheckGuest {
 */
 		
 // con ciclo for
-		
+/*		
 		for (int i = 0; i < invitati.length && isOk == false; i++) {
 			if (invitati[i].equals(nome) ) {
 				System.out.println("Puoi entrare");
 				isOk = true;
 			} 
 		}
+*/	
 		
+// bonus by me con foreach
 		
+		for (String invited : invitati) {
+			if (invited.equals(nome) ) {
+				System.out.println("Puoi entrare");
+				isOk = true;
+			} 
+		}
 		
 		if (isOk == false) {
 			System.out.println("Torna cortesemente da dove sei venuto");
 		}
-		
+	
 		
 		
 	}
