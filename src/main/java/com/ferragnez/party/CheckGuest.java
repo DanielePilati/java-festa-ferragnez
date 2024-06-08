@@ -13,16 +13,18 @@ public class CheckGuest {
 		nome = scanner.nextLine() ;
 		scanner.close();
 		int i=0;
-		while (i < invitati.length) {
-			
-			System.out.println("|l'indice numero: "+ i + "| nome: "+nome + "| confronto: "+invitati[i]);
-			
+		boolean isOk = false;
+		while (i < invitati.length && isOk == false) {			
 			if (invitati[i].equals(nome) ) {
-				System.out.println("puoi entrare");
+				System.out.println("Puoi entrare");
+				isOk = true;
 			} else {
-				System.out.println("non puoi entrare");
+				
 			}
 			i++;
+		}
+		if (isOk == false) {
+			System.out.println("Torna cortesemente da dove sei venuto");
 		}
 
 	}
