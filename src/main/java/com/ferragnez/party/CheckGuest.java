@@ -7,7 +7,19 @@ public class CheckGuest {
 	public static void main(String[] args) {
 		
 		String nome;
-		String[] invitati = { "Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"};
+		String[] invitati = { 
+				"Dua Lipa",
+				"Paris Hilton", 
+				"Manuel Agnelli", 
+				"J-Ax", 
+				"Francesco Totti", 
+				"Ilary Blasi", 
+				"Bebe Vio", 
+				"Luis", 
+				"Pardis Zarei", 
+				"Martina Maccherone", 
+				"Rachel Zeilic"
+				};
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("inserisci il tuo nome");
 		nome = scanner.nextLine() ;
@@ -17,7 +29,7 @@ public class CheckGuest {
 //con ciclo while
 /*		
         int i=0;
-		while (i < invitati.length && isOk == false) {			
+		while (i < invitati.length && isOk) {			
 			if (invitati[i].equals(nome) ) {
 				System.out.println("Puoi entrare");
 				isOk = true;
@@ -28,7 +40,7 @@ public class CheckGuest {
 		
 // con ciclo for
 /*		
-		for (int i = 0; i < invitati.length && isOk == false; i++) {
+		for (int i = 0; i < invitati.length && !isOk; i++) {
 			if (invitati[i].equals(nome) ) {
 				System.out.println("Puoi entrare");
 				isOk = true;
@@ -36,7 +48,7 @@ public class CheckGuest {
 		}
 */	
 		
-// bonus by me con foreach
+// bonus by me  foreach
 		
 		for (String invited : invitati) {
 			if (invited.equals(nome) ) {
